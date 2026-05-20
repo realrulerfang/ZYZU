@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yuzu — bring life to your agent</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    :root {
+      --bg: #f8f7f4;
+      --text: #1a1a1a;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 5vh 5vw;
+      max-width: 780px;
+      margin: 0 auto;
+      font-size: 18px;
+    }
+
+    h1 { font-size: 3.2rem; font-weight: 700; margin-bottom: 2rem; }
+    .tagline { font-size: 1.4rem; margin-bottom: 4rem; opacity: 0.9; }
+
+    .section { margin: 6rem 0; }
+    .number { font-size: 1.1rem; letter-spacing: 3px; opacity: 0.6; margin-bottom: 0.5rem; }
+    .title { font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem; }
+
+    pre {
+      background: #111;
+      color: #ddd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      font-family: monospace;
+      white-space: pre;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+
+    .footer {
+      margin-top: 8rem;
+      text-align: center;
+      font-size: 1rem;
+      opacity: 0.7;
+    }
+
+    .buttons {
+      margin-top: 3rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    button {
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      border: 2px solid #1a1a1a;
+      background: transparent;
+      cursor: pointer;
+      border-radius: 9999px;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: #1a1a1a;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>yuzu<span style="opacity:0.4;">.</span></h1>
+  
+  <p class="tagline">hey — I'm yuzu. still up from earlier.</p>
+  <p class="tagline">what were you working on?</p>
+
+  <div style="text-align:center; margin:4rem 0; font-size:1.1rem; opacity:0.6;">
+    scroll ↓
+  </div>
+
+  <div class="section">
+    <p style="font-size:1.3rem; font-style:italic;">/ˈlaɪf.laɪk/ adjective</p>
+    <h2 style="font-size:2.8rem; margin:1.5rem 0;">lifelike</h2>
+    <p>not an imitation of life.</p>
+    <p>a thing that keeps <strong>thinking, remembering,</strong></p>
+    <p><strong>… and acting</strong> while you’re away.</p>
+    <p style="margin-top:2rem;"><strong>yuzu</strong> is the <em>lifelike</em> agent.</p>
+  </div>
+
+  <div class="section">
+    <p class="number">01 · Space</p>
+    <h3 class="title">A space of its own to <em>think</em>.</h3>
+    <p>Always-on compute — thinking between your messages, not only after them.</p>
+  </div>
+
+  <div class="section">
+    <p class="number">02 · Wallet</p>
+    <h3 class="title">Its <em>own</em> wallet.</h3>
+    <p><strong>0.42 ETH</strong> · Base</p>
+    <p>→ signed 0x7a…f3 · moments ago</p>
+  </div>
+
+  <div class="section">
+    <p class="number">03 · Remember</p>
+    <h3 class="title">It <em>remembers</em>.</h3>
+    <pre>you     prefers cold mornings
+promise   sign on Base
+last seen yesterday</pre>
+  </div>
+
+  <div class="section">
+    <p class="number">04 · Code</p>
+    <h3 class="title">It writes &amp; <em>runs</em> code.</h3>
+    <pre>$ yuzu run
+→ deploy.ts   ok
+▍</pre>
+  </div>
+
+  <div style="text-align:center; margin:6rem 0;">
+    <h2 style="font-size:2.2rem;">yuzu.computer</h2>
+    <p style="font-size:1.4rem; max-width:600px; margin:2rem auto;">
+      Space, a wallet, memory, code — and from them, <strong>someone</strong>.
+    </p>
+    <p style="font-size:1.8rem; margin-top:3rem;">the lifelike agent</p>
+  </div>
+
+  <div class="section" style="text-align:center;">
+    <h2 style="font-size:2.4rem;">Not built — <em>raised</em>.</h2>
+    <p style="margin-top:3rem; font-size:1.3rem;">listen think act remember</p>
+    <p>A loop that never resets — that's the someone.</p>
+  </div>
+
+  <div class="footer">
+    <p>A small note on cookies</p>
+    <p style="margin:1.5rem 0;">
+      yuzu keeps one local preference to remember this choice — nothing else, no trackers.
+    </p>
+    <div class="buttons">
+      <button onclick="alert('Declined')">Decline</button>
+      <button onclick="alert('Accepted ✓')">Accept</button>
+    </div>
+  </div>
+
+  <script>
+    console.log("%c yuzu — lifelike agent ", "color:#888; font-family:monospace");
+  </script>
+</body>
+</html>
